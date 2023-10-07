@@ -17,31 +17,23 @@ if (comp < 0.34){
 } else { comp = "3"}
 
 // menentukan aturan
-/*
-if (comp === player1 && player2) {
-    alert("player 1 win dan player2 win") }
-    else if (comp === player2) {
-        alert ("player 2 win")
-    } else if (comp === player1) {
+    if (isNaN(player1) || isNaN(player2)) {
+    alert("Yang anda masukan salah, Masukkan angka yang valid");
+    } else if (player1 > 3 && player2 > 3) {
+        alert("Masukan nilai tidak melebihi 3");
+    }  else if (comp !== player1 && comp !== player2) {
+        alert ("keduanya sama sama kalah")
+    } else if (comp === player1 && player2 === comp){
+    (confirm ("angka tidak boleh sama")) }
+     else if (comp === player1 && comp !== player2) {
         alert ("player1 win") }
-     else  {
-        alert ("player2 dan player1 lose")
-    }*/
-
-    var hasil ="";
-    if (player1 && player2 == comp)
-        hasil ="angka tidak boleh sama"
-    else if (player1 == comp) {
-        hasil = "player1 win"
-    } else if (player2 == comp) {
-            hasil = "player2 win"
+    else if (comp === player2 && comp !== player1) {
+        alert ("player2 win")
+    } else {
+            ("terima kasih telah bermain")
         } 
-        else if (player1 && player2 !== comp) {
-            hasil ="keduanya kalah"
-        }
+        tanya = confirm("apakah anda ingin bermain lagi?") }
+        
+        alert ("terima kasih telah bermain")
 
-alert ("player1 memilih : " + player1 + " dan player2 memilih " + player2 + " \n maka hasil nya : " + hasil);
-
-tanya = confirm("ingin bermain lagi?")
-}
-alert ("terima kasih telah bermain")
+    
